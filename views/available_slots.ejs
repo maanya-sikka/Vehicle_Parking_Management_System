@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Parking Slots</title>
+</head>
+<body>
+    <h1>Available Parking Slots</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Slot ID</th>
+                <th>Slot Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% slots.forEach(function(slot) { %>
+                <tr>
+                    <td><%= slot[0] %></td>
+                    <td><%= slot[1] %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <a href="/">Back to Home</a>
+</body>
+</html>

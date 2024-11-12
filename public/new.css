@@ -1,0 +1,116 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #4CAF50; /* Green */
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+.navigation {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover and Active State for Links */
+.nav-link:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.nav-link:active {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsiveness for Mobile Devices */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-link {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    .testimonials {
+        margin: 20px;
+        padding: 20px;
+        background-color: #e9f5e9;
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    .testimonials h2 {
+        font-size: 1.5em;
+        color: #333;
+    }
+    
+    .testimonial {
+        margin: 15px 0;
+        font-style: italic;
+        color: #555;
+    }
+    
+}
